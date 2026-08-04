@@ -505,7 +505,44 @@ h1, h2, h3, h4, h5, h6 {
   color: var(--text-dark);
   font-weight: 500;
 }
-
+/* --- Schedule Table --- */
+.schedule-table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: left;
+  color: white;
+}
+.schedule-table th, .schedule-table td {
+  padding: 15px 20px;
+  border-bottom: 1px solid rgba(212, 175, 55, 0.15);
+}
+.schedule-table th {
+  background: rgba(212, 175, 55, 0.15);
+  color: var(--primary);
+  font-family: 'Outfit', sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+.schedule-table tbody tr {
+  transition: var(--transition);
+}
+.schedule-table tbody tr:hover {
+  background: rgba(255, 255, 255, 0.05);
+}
+.schedule-table td {
+  font-size: 1rem;
+}
+.time-badge {
+  display: inline-block;
+  padding: 6px 12px;
+  background: rgba(15, 23, 42, 0.8);
+  border: 1px solid rgba(212, 175, 55, 0.3);
+  border-radius: 50px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--primary-light);
+}
 
 /* --- Roadmap System (LGS Kampı) --- */
 .roadmap-container {
