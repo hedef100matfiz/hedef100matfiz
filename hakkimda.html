@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hakkımda - Ahmet Kula</title>
+  <meta name="description" content="Ahmet Kula hakkında detaylı bilgi. Eğitim geçmişi, deneyimleri ve felsefesi.">
+  <link rel="icon" href="https://i.imgur.com/ByuDht1.jpeg" type="image/jpeg">
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Outfit:wght@500;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <link rel="stylesheet" href="style.css">
+  
+  <style>
+    .about-header {
+      padding: 180px 0 80px;
+      background: linear-gradient(135deg, #f0f8ff 0%, #e0e7ff 100%);
+      position: relative;
+    }
+    .story-content {
+      font-size: 1.15rem;
+      line-height: 1.9;
+    }
+    .story-content h3 {
+      font-size: 2rem;
+      margin-top: 40px;
+      margin-bottom: 20px;
+      color: var(--primary-dark);
+    }
+    .highlight-box {
+      background: rgba(59, 130, 246, 0.05);
+      border-left: 4px solid var(--primary);
+      padding: 30px;
+      border-radius: 0 12px 12px 0;
+      margin: 40px 0;
+      font-style: italic;
+      font-size: 1.25rem;
+      color: var(--text-dark);
+    }
+    .timeline {
+      margin-top: 50px;
+      padding-left: 30px;
+      border-left: 3px solid rgba(59, 130, 246, 0.2);
+    }
+    .timeline-item {
+      position: relative;
+      margin-bottom: 40px;
+    }
+    .timeline-item::before {
+      content: '';
+      position: absolute;
+      left: -38px;
+      top: 0;
+      width: 14px;
+      height: 14px;
+      border-radius: 50%;
+      background: var(--primary);
+      border: 4px solid white;
+      box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.2);
+    }
+    .timeline-date {
+      font-family: 'Outfit', sans-serif;
+      font-weight: 700;
+      color: var(--primary);
+      margin-bottom: 5px;
+      display: block;
+    }
+    .timeline-title {
+      font-family: 'Outfit', sans-serif;
+      font-size: 1.3rem;
+      color: var(--text-dark);
+      margin-bottom: 10px;
+      font-weight: 700;
+    }
+  </style>
+</head>
+<body>
+
+<header class="site-header">
+  <nav class="navbar glass scrolled">
+    <div class="container">
+      <a href="index.html" class="logo">
+        <span class="logo-icon">🎯</span>
+        <span class="logo-text">Hedef100<span class="highlight">MatFiz</span></span>
+      </a>
+      <div class="main-nav">
+        <ul class="nav-links">
+          <li><a href="index.html#hakkinda" class="nav-link active">Eğitmen</a></li>
+          <li><a href="index.html#icerik" class="nav-link">Kamp İçeriği</a></li>
+          <li><a href="blog.html" class="nav-link">Blog</a></li>
+          <li><a href="index.html#kayit" class="nav-link">Kayıt Ol</a></li>
+        </ul>
+      </div>
+      <div class="navbar-right">
+        <a href="index.html" class="button primary-button text-sm" style="padding: 10px 20px;">Ana Sayfaya Dön</a>
+        <button id="hamburger-btn" class="hamburger" aria-label="Menüyü aç">
+          <div class="hamburger-lines">
+            <span class="line line1"></span>
+            <span class="line line2"></span>
+            <span class="line line3"></span>
+          </div>
+        </button>
+      </div>
+    </div>
+  </nav>
+</header>
+
+<main>
+  <section class="about-header overflow-hidden text-center">
+    <div class="grid-overlay"></div>
+    <div class="container relative z-10">
+      <img src="https://i.imgur.com/gQV5QGo.jpeg" alt="Ahmet Kula" style="width: 150px; height: 150px; border-radius: 50%; border: 4px solid white; box-shadow: 0 10px 30px rgba(0,0,0,0.1); margin-bottom: 20px;">
+      <h1 class="main-title" style="font-size: 3rem; margin-bottom: 10px;">Ahmet Kula</h1>
+      <p class="subtitle" style="font-size: 1.2rem;">Fizik & Matematik Eğitmeni</p>
+    </div>
+  </section>
+
+  <section class="section-padding">
+    <div class="container max-w-700 mx-auto">
+      <div class="glass-card p-5" style="padding: 50px;">
+        <div class="story-content">
+          <p class="lead-text">Merhaba! Ondokuz Mayıs Üniversitesi Fizik bölümünden mezun olduğum günden bu yana, sayılarla ve doğanın yasalarıyla iç içe bir yaşam sürüyorum.</p>
+          
+          <p>Öğrencilik yıllarımdan itibaren başlayan eğitim serüvenim, on yılı aşkın süredir binlerce öğrencinin hayatına dokunmamı sağladı. Benim için öğretmenlik sadece tahtaya formül yazmak değil; bir öğrencinin "İşte şimdi anladım!" dediği o aydınlanma anına şahitlik etmektir.</p>
+          
+          <div class="highlight-box">
+            "Fizik ve Matematik ezberlenecek birer ders değil, evrenin ve yaşamın şifrelerini çözdüğümüz birer dildir."
+          </div>
+
+          <h3>Neden Bu Kamp?</h3>
+          <p>Yıllar boyunca hem özel derslerde hem de kurumsal kurumlarda öğrencilerimin en çok zorlandığı alanların fizik ve matematik olduğunu gördüm. Çoğu zaman sorun öğrencinin potansiyeli değil, konunun sunuluş biçimiydi. Öğrenciler formül yığınları arasında kaybolurken, asıl mantığı kaçırıyorlardı.</p>
+          
+          <p>İşte <strong>Hedef 100 MAT-FİZ</strong> kampı fikri böyle doğdu. Sınavlara hazırlık sürecindeki gereksiz stresi ortadan kaldırmak, konuları temelden, mantığıyla, interaktif bir şekilde ele almak için bu kampı kurguladım. Amacım sadece net artırmak değil, aynı zamanda düşünme becerilerinizi geliştirmek.</p>
+
+          <h3>Eğitim Yaklaşımım</h3>
+          <div class="timeline">
+            <div class="timeline-item">
+              <span class="timeline-date">1. Temeli Sağlam Atmak</span>
+              <div class="timeline-title">Mantıksal Çerçeve</div>
+              <p>Hiçbir konuyu havada bırakmadan, "Neden?" sorusuna yanıt vererek ilerliyoruz. Temel sağlam olduğunda, üzerine inşa edilecek zor sorular sarsılmaz bir yapıya sahip olur.</p>
+            </div>
+            <div class="timeline-item">
+              <span class="timeline-date">2. Pratik Zeka Gelişimi</span>
+              <div class="timeline-title">Yeni Nesil Soru Çözümü</div>
+              <p>ÖSYM'nin yeni nesil soru tarzına uygun olarak, okuduğunu anlama ve matematiksel/fiziksel dile çevirme konusunda özel taktikler uyguluyoruz.</p>
+            </div>
+            <div class="timeline-item">
+              <span class="timeline-date">3. Sürekli Motivasyon</span>
+              <div class="timeline-title">Yol Arkadaşlığı</div>
+              <p>Sınav süreci uzun bir maratondur. Bu süreçte sadece öğretmeniniz değil, sizi anlayan, yönlendiren ve motive eden bir yol arkadaşınız oluyorum.</p>
+            </div>
+          </div>
+          
+          <div class="text-center mt-5" style="margin-top: 60px;">
+            <a href="index.html#kayit" class="button primary-button btn-glow">Bu Yolculukta Bana Katılın</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="container text-center">
+    <p>© 2026 Hedef 100 MAT-FİZ Kampı | Tüm Hakları Saklıdır.</p>
+  </div>
+</footer>
+
+<script>
+  const hamburgerBtn = document.getElementById('hamburger-btn');
+  const mainNav = document.querySelector('.main-nav');
+  
+  hamburgerBtn.addEventListener('click', () => {
+    hamburgerBtn.classList.toggle('active');
+    mainNav.classList.toggle('active');
+  });
+</script>
+</body>
+</html>

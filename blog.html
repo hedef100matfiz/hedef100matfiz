@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blog - Hedef 100 MAT-FİZ Kampı</title>
+  <meta name="description" content="TYT-AYT Fizik ve Matematik ile ilgili faydalı yazılar ve ipuçları.">
+  <link rel="icon" href="https://i.imgur.com/ByuDht1.jpeg" type="image/jpeg">
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Outfit:wght@500;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <link rel="stylesheet" href="style.css">
+  
+  <style>
+    /* Blog Page Specific Styles */
+    .blog-header {
+      padding: 180px 0 100px;
+      text-align: center;
+      background: linear-gradient(135deg, #f0f8ff 0%, #e0e7ff 100%);
+      position: relative;
+    }
+    .blog-header .orb-1 { width: 300px; height: 300px; top: -50px; right: 10%; }
+    .blog-header .orb-2 { width: 250px; height: 250px; bottom: 0; left: 10%; }
+  </style>
+</head>
+<body>
+
+<header class="site-header">
+  <nav class="navbar glass scrolled">
+    <div class="container">
+      <a href="index.html" class="logo">
+        <span class="logo-icon">🎯</span>
+        <span class="logo-text">Hedef100<span class="highlight">MatFiz</span></span>
+      </a>
+      <div class="main-nav">
+        <ul class="nav-links">
+          <li><a href="index.html#hakkinda" class="nav-link">Eğitmen</a></li>
+          <li><a href="index.html#icerik" class="nav-link">Kamp İçeriği</a></li>
+          <li><a href="blog.html" class="nav-link active">Blog</a></li>
+          <li><a href="index.html#kayit" class="nav-link">Kayıt Ol</a></li>
+        </ul>
+      </div>
+      <div class="navbar-right">
+        <a href="index.html" class="button primary-button text-sm" style="padding: 10px 20px;">Ana Sayfaya Dön</a>
+        <button id="hamburger-btn" class="hamburger" aria-label="Menüyü aç">
+          <div class="hamburger-lines">
+            <span class="line line1"></span>
+            <span class="line line2"></span>
+            <span class="line line3"></span>
+          </div>
+        </button>
+      </div>
+    </div>
+  </nav>
+</header>
+
+<main>
+  <section class="blog-header overflow-hidden">
+    <div class="orb orb-1"></div>
+    <div class="orb orb-2"></div>
+    <div class="grid-overlay"></div>
+    <div class="container relative z-10">
+      <div class="section-badge bg-white">Makaleler & Kaynaklar</div>
+      <h1 class="main-title" style="font-size: 4rem; margin-bottom: 20px;">Blog</h1>
+      <p class="section-desc">Sınav stratejileri, konu analizleri ve çalışma taktikleri hakkında her şey.</p>
+    </div>
+  </section>
+
+  <section class="section-padding bg-light">
+    <div class="container">
+      <div class="blog-grid" style="margin-top: 0;">
+        
+        <article class="blog-card glass-card hover-lift">
+          <div class="blog-card-img bg-gradient-1"></div>
+          <div class="blog-card-content">
+            <span class="blog-category">Rehberlik</span>
+            <h3>Sınavda Başarının Sırları: Stratejik Hedef Belirleme</h3>
+            <p>Başarının ilk adımı, nereye gittiğinizi bilmektir. "Tüm konuları bitireceğim" demek yerine, somut, ölçülebilir ve gerçekçi hedefler belirleyin. Bu yazımızda SMART hedefler oluşturmayı inceliyoruz...</p>
+            <a href="blog/sinavda-basari.html" class="link-arrow mt-auto">Devamını Oku <i class="fas fa-arrow-right"></i></a>
+          </div>
+        </article>
+
+        <article class="blog-card glass-card hover-lift">
+          <div class="blog-card-img bg-gradient-2"></div>
+          <div class="blog-card-content">
+            <span class="blog-category">Fizik</span>
+            <h3>Fiziği Anlamak: Formüllerin Ötesine Geçmek İçin 5 Adım</h3>
+            <p>Fizik, etrafımızdaki dünyayı açıklar. Yeni bir konuya başlarken formüle boğulmadan önce, o konunun günlük hayattaki karşılığını düşünün. Vektörler, hareket ve kuvvet ilişkisini kolayca kavramak için yapmanız gerekenler...</p>
+            <a href="blog/fizigi-anlamak.html" class="link-arrow mt-auto">Devamını Oku <i class="fas fa-arrow-right"></i></a>
+          </div>
+        </article>
+
+        <article class="blog-card glass-card hover-lift">
+          <div class="blog-card-img bg-gradient-3"></div>
+          <div class="blog-card-content">
+            <span class="blog-category">Matematik</span>
+            <h3>Matematik Aslında Çok Basit: Zihniyeti Değiştirmek</h3>
+            <p>Matematik, sabır ve pratik işidir. Müzik aleti çalmak veya spor yapmak gibidir. Düzenli pratik yapan herkesin beyni düşünmeye alışır. Yapamıyorum demek yerine, "henüz yapamıyorum" diyerek yola nasıl çıkılır?</p>
+            <a href="blog/matematik-cok-basit.html" class="link-arrow mt-auto">Devamını Oku <i class="fas fa-arrow-right"></i></a>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <a href="index.html" class="logo">
+          <span class="logo-icon">🎯</span>
+          <span class="logo-text">Hedef100<span class="highlight">MatFiz</span></span>
+        </a>
+        <p class="footer-desc mt-3">Sınav yolculuğunuzda en güçlü destekçiniz.</p>
+      </div>
+      <div class="footer-social">
+        <a href="https://www.instagram.com/hedef_100matfiz" target="_blank" class="social-circle"><i class="fab fa-instagram"></i></a>
+        <a href="https://www.tiktok.com/@hedef_100matfiz" target="_blank" class="social-circle"><i class="fab fa-tiktok"></i></a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2026 Hedef 100 MAT-FİZ Kampı | Tüm Hakları Saklıdır.</p>
+    </div>
+  </div>
+</footer>
+
+<script>
+  // Hamburger Menu Logic
+  const hamburgerBtn = document.getElementById('hamburger-btn');
+  const mainNav = document.querySelector('.main-nav');
+  
+  hamburgerBtn.addEventListener('click', () => {
+    hamburgerBtn.classList.toggle('active');
+    mainNav.classList.toggle('active');
+  });
+</script>
+</body>
+</html>
